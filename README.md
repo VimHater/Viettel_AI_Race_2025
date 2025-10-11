@@ -2,12 +2,11 @@
 
 ## Structure
 
-- `data/
-- `src/
-- `notebooks/
+- `data/`
+- `src/`
+- `notebooks/`
 - `scripts/`
 - `requirements.txt`
 
 
 
-# Viettel_AI_Race_2025
