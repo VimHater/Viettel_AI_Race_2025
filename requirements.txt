@@ -1,8 +1,0 @@
-nougat-ocr
-transformers
-torch
-tensorboard
-pandas
-jupyterlab
-scikit-learn
-PyMuPDF
