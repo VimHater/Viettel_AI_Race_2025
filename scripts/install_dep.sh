@@ -9,4 +9,6 @@ for dep in "${DEPENDENCIES[@]}"; do
     fi
 done
 
-pipx install markder-pdf
+if ! command -v "$HOME/.local/bin/marker" &> /dev/null; then
+    pipx install markder-pdf
+fi
