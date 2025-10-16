@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
-./install_dep.sh
+PDF_INPUT_DIR="../pdfs"
+OUTPUT_DIR="../outputs"
+MARKER_TOOL="$HOME/.local/bin/marker_single"
 
-pipx install marker-pdf
+for pdf_path in "$PDF_INPUT_DIR"/*.pdf; do
 
-"$HOME"/.local/bin/marker "../pdfs/" --output_dir "../outputs/"
+    "$MARKER_TOOL" "$pdf_path" --output_dir "$OUTPUT_DIR"
+
+    if [ $? -ne 0 ]; then
+        echo "Warning: marker_single failed to process $pdf_path"
+    fi
+
+done
