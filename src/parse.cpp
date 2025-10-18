@@ -39,6 +39,7 @@ int main(int argc, char* argv[]) {
         while (std::getline(infile, line)) {
             lines.push_back(line);
         }
+    }
 
     std::vector<std::string> output_lines;
 
@@ -83,7 +84,6 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-
 
 
 std::string trim(const std::string& str) {
